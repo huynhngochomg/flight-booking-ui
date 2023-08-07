@@ -1,0 +1,152 @@
+:root {
+    --primaryColor: hsl(225,50%,48%);
+    --secondaryColor: hsl(180,17%,95%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28,100%,82%);
+    --hoverColor: hsl(225,56%,59%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 12%);
+    --textColor: hsl(240, 1%, 48%);
+    --borderColor: hsl(0, 0%, 83%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%,96%);
+    --greyText: rgb(145, 145, 145);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --transition: .4s ease-in-out;
+}
+
+.support {
+    .sectionContainer {
+        .titleDiv {
+            text-align: center;
+            small {
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        }
+
+        .infoDiv {
+            margin-top: 2rem;
+            gap: 1.5rem;
+
+            .textDiv {
+                gap: 1.5rem;
+
+                .singleInfo {
+                   
+                    .number {
+                        display: block;
+                        background: var(--primaryColor);
+                        padding: 20px 12px;
+                        border-radius: 3rem;
+                        width: 40px;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: var(--whiteColor);
+                        
+                    }
+
+                    h3 {
+                        margin: 12px 0;
+                    }
+
+                    .colorOne {
+                        background: var(--colorOne);
+                    }
+
+                    .colorTwo {
+                        background: var(--colorTwo);
+                    }
+                }
+            }
+
+            .imgDiv {
+                position: relative;
+                margin: auto;
+                width: 100%;
+                min-height: 400px;
+                object-fit: cover;
+                
+                .image1 {
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    max-width: 420px;
+                    top: 6rem;
+                    left: 0;
+                    z-index: 3;
+                }
+
+                .image2 {
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    max-width: 420px;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 2;
+                    
+                }
+                
+                .image3 {
+                    width: 50%;
+                    height: 100%;
+                    max-width: 420px;
+                    position: absolute;
+                    top: 6rem;
+                    right: 0;
+                    z-index: 1;
+                }
+
+                img {   
+                    border-radius: 100rem;
+                }
+            }
+        }
+    }
+}
+
+//Media Queries 
+
+@media screen and (min-width:520px){
+    .imgDiv {
+        max-height: 500px;
+    }
+}
+
+@media screen and (min-width:660px){
+    .imgDiv {
+        max-height: 600px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                .imgDiv {
+                    transform: translateY(-30%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1920px){
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                padding-top: 5rem;
+                .imgDiv {
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

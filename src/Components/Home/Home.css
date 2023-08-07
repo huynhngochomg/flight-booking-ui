@@ -1,0 +1,35 @@
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+.home .mainText {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 2.5rem;
+}
+.home .homeImages {
+  width: 100%;
+  margin: 1rem auto 0;
+  justify-content: center;
+  position: relative;
+  border-radius: 5rem;
+  z-index: 1;
+}
+.home .homeImages .videoDiv {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.home .homeImages .videoDiv .video {
+  border-radius: 10rem;
+  z-index: 1;
+}
+.home .homeImages .plane {
+  position: absolute;
+  width: 100%;
+  top: -10%;
+  z-index: 2;
+}/*# sourceMappingURL=Home.css.map */

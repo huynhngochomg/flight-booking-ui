@@ -1,0 +1,50 @@
+:root {
+    --primaryColor: hsl(225,50%,48%);
+    --secondaryColor: hsl(180,17%,95%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28,100%,82%);
+    --hoverColor: hsl(225,56%,59%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 12%);
+    --textColor: hsl(240, 1%, 48%);
+    --borderColor: hsl(0, 0%, 83%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%,96%);
+    --greyText: rgb(145, 145, 145);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --transition: .4s ease-in-out;
+}
+
+.subscribe {
+    background: var(--secondaryColor);
+    
+    .sectionContainer {
+        text-align: center;
+
+        .inputDiv {
+            margin-top: 1rem;
+            flex-direction: column;
+            background: var(--whiteColor);
+            border-radius: 1rem;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem .5rem;
+
+                &::placeholder {
+                    font-size: 13px;
+                    opacity: .5;
+                }
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+
+        }
+    }
+}

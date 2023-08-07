@@ -1,0 +1,113 @@
+:root {
+  --primaryColor: hsl(225,50%,48%);
+  --secondaryColor: hsl(180,17%,95%);
+  --colorOne: hsl(15, 74%, 70%);
+  --colorTwo: hsl(28,100%,82%);
+  --hoverColor: hsl(225,56%,59%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 12%);
+  --textColor: hsl(240, 1%, 48%);
+  --borderColor: hsl(0, 0%, 83%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%,96%);
+  --greyText: rgb(145, 145, 145);
+  --inputColor: hsl(330, 12%, 97%);
+  --boxShadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: .4s ease-in-out;
+}
+
+.travelers .sectionContainer {
+  text-align: center;
+}
+.travelers .sectionContainer .travelersContainer {
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler {
+  position: relative;
+  height: 320px;
+  width: 85%;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: auto;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
+  position: absolute;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 30px;
+  left: 40%;
+  transform: translateX(-50%);
+  border: 4px solid rgba(225, 225, 225, 0.6);
+  transition: var(--transition);
+  animation: animated 2.3s infinite;
+}
+@keyframes animated {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
+  bottom: -100%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--whiteColor);
+  padding: 1.5rem 1rem;
+  transition: var(--transition);
+  animation: animatedBorders 2.3s infinite;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName span {
+  font-weight: 700;
+  color: var(--blackColor);
+  display: block;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName p {
+  color: var(--primaryColor);
+  font-style: italic;
+}
+@keyframes animatedBorders {
+  0% {
+    border-radius: 0rem;
+  }
+  50% {
+    border-radius: 2rem;
+  }
+  100% {
+    border-radius: 0rem;
+  }
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler:hover {
+  cursor: pointer;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerName {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerImage {
+  bottom: 110px;
+  transition: 0.5s ease-in-out;
+}/*# sourceMappingURL=Travelers.css.map */

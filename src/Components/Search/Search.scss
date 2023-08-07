@@ -1,0 +1,103 @@
+:root {
+    --primaryColor: hsl(225,50%,48%);
+    --secondaryColor: hsl(180,17%,95%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28,100%,82%);
+    --hoverColor: hsl(225,56%,59%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 12%);
+    --textColor: hsl(240, 1%, 48%);
+    --borderColor: hsl(0, 0%, 83%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%,96%);
+    --greyText: rgb(145, 145, 145);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --transition: .4s ease-in-out;
+}
+
+
+.search {
+    .sectionContainer {
+        width: 100%;
+        padding: 1.5rem;
+        border: 2px solid var(--greyBg);
+        border-radius: 16px;
+        row-gap: 2rem;
+    }
+
+    .btns {
+        width: 100%;
+        background: var(--secondaryColor);
+        padding: .5rem;
+        margin: auto;
+        flex-direction: column;
+        border-radius: 1rem;
+
+
+        .singleBtn {
+            padding: .8rem 1.5rem;
+            font-size: 13px;
+            border-radius: 3rem;
+            width: 80%;
+            text-align: center;
+
+            &:hover {
+                background: var(--primaryColor);
+                color: var(--whiteColor);
+                font-weight: 500;
+                transition: .4s ease;
+                cursor: pointer;
+            }
+        }
+
+        .active {
+            background: var(--primaryColor);
+            color: var(--whiteColor);
+            font-weight: 500;
+        }
+    }
+
+    .searchInput {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+
+        .singleInput {
+            .iconDiv {
+                padding: 16px 10px;
+                border-radius: 3rem;
+                background: var(--secondaryColor);
+                margin-right: 1rem;
+
+                .icon {
+                    color: var(--blackColor);
+                    opacity: .7;
+                }
+            }
+
+            .texts {
+                h4 {
+                    padding-top: 0;
+                    padding-bottom: .7rem;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                input {
+                    width: 95%;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder {
+                        font-size: 12px;
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
